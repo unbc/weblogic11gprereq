@@ -1,4 +1,4 @@
-# Version: 0.0.3 Weblogic 11g Prerequisites
+# Version: 0.0.4 Weblogic 11g Prerequisites
 FROM unbc/oraclelinux6
 MAINTAINER Trevor Fuson "trevor.fuson@unbc.ca"
 
@@ -32,7 +32,6 @@ ENV JAVA_MINOR_VERSION 71
 ENV JAVA_BUILD_NUMBER  14
 ENV JAVA_HOME          /usr/java/jdk1.7.0_$JAVA_MINOR_VERSION
 ENV PATH               JAVA_HOME/bin:$PATH
-RUN echo $PATH
 
 # Install Java JDK without leaving behind temporary files
 RUN curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" \
